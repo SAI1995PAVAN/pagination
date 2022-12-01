@@ -1,38 +1,58 @@
 .App {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.profiles-list-component {
+  width: 100%;
+}
+
+.App h1 {
   text-align: center;
+  padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1240px;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 1em;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.page-button {
+  padding: 1em;
+  margin: 0.5em;
+  color: #fff;
+  background-color: #49a6e9;
+  border-color: #49a6e9;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-button:hover {
+  background-color: #0993f5;
+  border-color: #0993f5;
+}
+
+.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.prev-next {
+  /* display: inline-block; */
+  color: #000;
+  border: 3px solid #0993f5;
+  cursor: pointer;
+  padding: 0.25em 3em;
+  margin: 0 1em;
+}
+
+.prev-next:hover {
+  color: #0993f5;
+  border-color: #000;
 }
